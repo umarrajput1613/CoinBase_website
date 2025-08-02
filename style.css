@@ -1,0 +1,726 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-color: white;
+    color: black;
+}
+/* CSS FOR HEADER START */
+.main-header {
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 0;
+    width: 100%;
+    height: 62px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0052ff;
+    text-transform: lowercase;
+}
+
+.nav-actions-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.nav-links a {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 22px 0; /* Yeh adjust karta hai text position */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* 👈 Yeh magic line: 1px neeche border tak touch karne ke liye */
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #0052ff;
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.globe-btn {
+    background-color: #f2f2f2;
+    border: 0px solid #ccc;
+    padding: 10px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe-btn img {
+    width: 15px;
+    height: 15px;
+}
+
+.sign-in {
+    background-color: #f2f2f2;
+    border: 0px solid #ccc;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.sign-up {
+    background-color: #0052ff;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.sign-up:hover {
+    background-color: #003ecc;
+}
+/* CSS FOR HEADER END */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 60px; /* extra spacing after fixed header */
+  gap: 40px;
+  
+  background-color: white;
+}
+
+.container-img img {
+  width: 600px;
+  height: auto;
+  
+  border-radius: 12px;
+}
+
+.container-text {
+  max-width: 500px;
+}
+
+.container-text h1 {
+  font-size: 62px;
+  line-height: 70px;
+  margin-bottom: 20px;
+  font-family: "Graphik", sans-serif;
+  font-weight: 100; /* or 700 depending on style */
+  
+}
+@font-face {
+    font-family: 'Agency FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Agency FB Bold'), url('AGENCYB.woff') format('woff');
+    }
+
+.container-text p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Graphik", sans-serif;
+  color: #000000;
+}
+
+.container-text label {
+  display: block;
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.container-text input {
+  padding: 13px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+input[type="email"]::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888; /* Soft gray placeholder color */
+}
+
+.sign-up-btn {
+  background-color: #0052ff;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sign-up-btn:hover {
+  background-color: #003ecc;
+}
+
+/*crypto section*/
+
+
+.crypto-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  background-color: #f6f8ff;
+  font-family: 'Graphik', sans-serif;
+}
+
+.crypto-section .container-img2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.crypto-section .container-img2 .link-sec2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.crypto-section .container-img2 .link_sec2 a {
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.crypto-section .container-img2 .link_sec2 a:hover {
+  background-color: black;
+  color: #eeeeee;
+}
+.crypto-section .container-img2 iframe {
+  width: 650px;
+  height: 450px;
+  border: none;
+  border-radius: 12px;
+}
+.crypto-section .container-img2 .link_sec2 a.active {
+  background-color: black;
+  color: #eeeeee;
+}
+
+
+/*
+end cryptos-section*/
+/*  thats section is not need to more styling due tothis we are going to next section *?*/
+/* section black and half backgruond image*/
+.black {
+  background-color: #1E2025;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  padding-left: 0px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-right: 0px;
+}
+.blk-header{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+  height: 50%;
+  gap: 50px;
+  padding-left: 100px;
+font-family: Graphik;
+}
+.blk-header h1 {
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  font-family: "Graphik", sans-serif;
+  font-weight: lighter;
+
+  color: white;
+  width: 30%;
+}
+.blk-header .set p {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.blk-header .set button {
+  background-color: white;
+  color: #1F2025;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.blk-header .set button:hover {
+  background-color: #1F2025;
+  color: white;
+}
+.blk-img {
+  background: url('cb-banner.avif') no-repeat center center;
+  background-size: cover;
+
+position: absolute;
+  bottom: 0;
+    height: 35%;
+  width: 100%;
+}
+/* section black and half backgruond image end*/
+.container-img1 img {
+  width: 350px;
+  height: auto;
+  
+  border-radius: 12px;
+}
+.container-logo {
+  color: black;
+  font-size: 25px;
+  font-weight: 550;
+  font-family: Graphik, sans-serif;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 10px;
+}
+.container-logo .logo-image svg{
+  
+  width: 30px;
+  height: 30px;
+}
+/*section balck to blue section blue start*/
+.blue{
+  background-color: #0052ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  text-align: center;
+}
+.sub-blue {
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+padding: 20px;
+}
+.sub-blue span {
+  color: white;
+  font-size: 30px;
+  font-family: Graphik, sans-serif;
+}
+.sub-blue .sub-blue-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  
+  padding: 0px;
+  box-sizing: border-box;
+}
+.sub-blue .sub-blue-content p {
+  font-size: 20px;
+  
+  margin: 16px 0;
+  font-family: Graphik, sans-serif;
+}
+.sub-blue .sub-blue-content button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 18px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.sub-blue .sub-blue-content button:hover {
+  background-color: #003ecc;
+  color: white;
+}
+.sub-blue2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 160px;
+  padding: 0px 20px;
+}
+.sub-blue2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  border-left: 1px solid white;
+  color: white;
+}
+.sub-blue2-content span {
+  font-size: 90px;
+  font-family: Graphik, sans-serif;
+}
+.sub-blue2-content p {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 600;
+  font-family: Graphik, sans-serif;
+}
+/*end blue div*/
+/*next section*/
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-cards .card-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 200px;
+}
+.card-first span {
+  font-size: 36px;
+  font-family: Graphik, sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.card-first button {
+  background-color: #0052ff;
+  color: white;
+  border: none;
+  padding: 18px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.card-first button:hover {
+  background-color: #003ecc;
+}
+.container-cards .card-second {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 50px;
+}
+.card-second p {
+  font-size: 20px;
+  font-family: Graphik, sans-serif;
+  color: #8d8a8a;
+  margin-bottom: 20px;
+}
+.box-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 20px;
+}
+.box-section .box {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 40px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+.box-section .box:hover {
+  transform: translateY(-5px);
+}
+.box-section .box img {
+  width: 80px;
+  height: 80px;
+  margin: 0px;
+}
+.box-section .box span {
+  font-size: 28px;
+  font-family: Graphik, sans-serif;
+  color: black;
+  margin: 20px 0;
+}
+.box-section .box p {
+  font-family: Graphik, sans-serif;
+  color: #6e6c6c;
+}
+.new-section {
+background-color: #EEF0F3;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.new-section .sub-new {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.sub-new .btn-sec2 button {
+   background-color: #0052ff;
+  color: white;
+  border: none;
+  padding: 18px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  height: 30px
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sub-new .btn-sec2 button:hover{
+  background-color: white;
+  color: #0052ff;
+}
+.sub-new .sub-new-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.sub-new .sub-new-head span {
+  font-size: 28px;
+  font-family: Graphik, sans-serif;
+  color: black;
+  margin: 20px 0;
+}
+.sub-new .sub-new-head p {
+  font-family: Graphik, sans-serif;
+  color: #6e6c6c;
+  font-size: 20px;
+}
+.sub-detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.detail-box {
+  width: 350px;
+  height: 550px;
+
+
+}
+.detail-box img {
+  width: 100%;
+  height: 35%;
+  border-radius: 30px;
+}
+.detail-box a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  font-family: Graphik, sans-serif;
+  margin: 20px 0;
+}
+
+.detail-box p {
+  font-family: Graphik, sans-serif;
+  color: #6e6c6c;
+  font-size: 20px;
+}
+.hover .detail-box a:hover {
+  color: #0052ff;
+  cursor: pointer;
+}
+.detail-box:hover a {
+  color: #0052ff;
+  cursor: pointer;
+}
+/*end new-section*//*
+section non specila img and txt btn
+*//*
+last section start
+*/
+.section-last {
+  background-color: #1E2025;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-last span {
+  font-size: 38px;
+  font-family: Graphik, sans-serif;
+  color: white;
+  font-weight: 500;
+  margin: 20px 0;
+
+}
+.section-last-sub {
+  color: white;
+  font-family: Graphik, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-last-sub p {
+  font-family: Graphik, sans-serif;
+  color: white;
+  font-size: 20px;
+
+}
+.section-last-sub .btn-sec3 button {
+  color: black;
+  font-size: 14px;
+  font-family: Graphik, sans-serif;
+  background-color: white;
+  padding: 18px 20px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.section-last-sub button:hover {
+  background-color: whitesmoke;
+}
+/*section-last completed*?*/
+/*footer section*/
+.footer {
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+  width: 200px;
+}
+.footer .footer-section h3 {
+  font-size: 18px;
+  font-family: Graphik, sans-serif;
+  color: black;
+  margin-bottom: 10px;
+}
+.footer .footer-section p {
+  cursor: pointer;
+  color: #646161;
+  font-size: 17px;
+  font-family: Graphik, sans-serif;
+}
+.footer .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .footer-logo h1 {
+  font-size: 28px;
+    font-weight: 700;
+    color: #0052ff;
+    text-transform: lowercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  
+}
+.footer .footer-logo p {
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: Graphik, sans-serif;
+  color: #113355;
+}
+.footer .footer-logo .footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+.footer .footer-logo .footer-social a {
+  text-decoration: none;
+  color: #0052ff;
+  font-size: 16px;
+  font-family: Graphik, sans-serif;
+}
+.footer .footer-logo .primary-link {
+  color: #113355;
+  font-size: 16px;
+  font-family: Graphik, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.footer .footer-logo .primary-link a {
+  text-decoration: none;
+  color: #113355;
+  font-size: 16px;
+  font-family: Graphik, sans-serif;
+ 
+}
+.footer .footer-logo .primary-link a img {
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Prices</title>
+  <style>
+    body {
+      font-family: Graphik, sans-serif;
+      margin: 0;
+      background-color: #f6f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      width: 140px;
+      height: 140px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.2s;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 12px;
+    }
+
+    .card span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-size: 14px;
+      color: #222;
+      margin-bottom: 4px;
+    }
+
+    .change {
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    .change.positive {
+      color: #2ecc71;
+    }
+
+    .change.negative {
+      color: #e74c3c;
+    }
+
+    .change.neutral {
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="Bitcoin.png" alt="Bitcoin" />
+      <span>Bitcoin</span>
+      <div class="price">PKR 32,239,685.99</div>
+      <div class="change negative">↓ 1.31%</div>
+    </div>
+
+    <div class="card">
+      <img src="Ethereum.png" alt="Ethereum" />
+      <span>Ethereum</span>
+      <div class="price">PKR 992,666.43</div>
+      <div class="change negative">↓ 4.11%</div>
+    </div>
+
+    <div class="card">
+      <img src="xrp.png" alt="XRP" />
+      <span>XRP</span>
+      <div class="price">PKR 844.42</div>
+      <div class="change positive">↑ 0.55%</div>
+    </div>
+
+    <div class="card">
+      <img src="thether.jpg" alt="Tether" />
+      <span>Tether</span>
+      <div class="price">PKR 283.33</div>
+      <div class="change negative">↓ 0.03%</div>
+    </div>
+
+    <div class="card">
+      <img src="Solana.png" alt="Solana" />
+      <span>Solana</span>
+      <div class="price">PKR 46,626.04</div>
+      <div class="change negative">↓ 2.82%</div>
+    </div>
+
+    <div class="card">
+      <img src="USDC.png" alt="USDC" />
+      <span>USDC</span>
+      <div class="price">PKR 283.46</div>
+      <div class="change neutral">0.00%</div>
+    </div>
+  </div>
+</body>
+</html>
