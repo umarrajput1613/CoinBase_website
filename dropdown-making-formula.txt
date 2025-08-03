@@ -1,0 +1,42 @@
+CSS Structure For Dropdown:
+.dropdown {
+ position: relative;
+ display: flex;
+ flex-drirection: column
+ gap: 10px;
+}
+.dropdown-btn {
+is that like a in webpage header
+}
+
+.dropdown-btn:hover {
+is that like a:hover in webpage header
+}
+
+.dropdown-content {
+is that like header back-ground but smooth
+}
+
+.dropdown-content a {
+make button as you want
+}
+
+.dropdown-content a:hover {
+make button hover as you want
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+HTML Structure For Dropdown:
+
+<div class="dropdown">
+<div class="dropdown-btn">button name as want</div>
+<div class="dropdown-content">
+<a>button 1</a>
+<a>button 2</a>
+<a>button 3</a>
+</div>
+</div>
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Grid</title>
+  
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 0px;
+      background: white;
+     
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-left {
+      width: 60%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 50px;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .menu-item:hover .txt h4 {
+      color: #0053f0;
+    }
+
+    .menu-item:hover .txt p {
+      color: #000;
+    }
+
+    .menu-item .txt h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111;
+      transition: color 0.3s ease;
+    }
+
+    .menu-item .txt p {
+      font-size: 14px;
+      color: #666;
+      transition: color 0.3s ease;
+    }
+
+    .menu-item .icon {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 6px;
+      /* Image will be added here */
+    }
+
+    .menu-right {
+      width: 35%;
+      background: linear-gradient(to bottom right, #cbe3ff, #bfdcff);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      
+    }
+
+    .menu-right img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .menu-right h4 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    .menu-right p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .menu-right a {
+      font-size: 14px;
+      color: #0053f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-right a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <div class="menu-left">
+
+      <div class="menu-item">
+        <div class="icon"><img src="./head_img/Developers/logo1.svg" alt="Developer logo"></div>
+        <div class="txt">
+        <h4>Developer Platform</h4>
+        <p>Developer tools and APIs</p></div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon"><img src="./head_img/Developers/logo2.svg" alt="Onramp logo"></div>
+        <div class="txt">
+        <h4>Onramp</h4>
+        <p>A secure fiat-to-crypto solution</p></div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon"><img src="./head_img/Developers/logo3.svg" alt="base logo"></div>
+        <div class="txt">
+        <h4>Base</h4>
+        <p>An Ethereum L2 to build Onchain apps</p></div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon"><img src="./head_img/Developers/logo4.svg" alt="Staking logo"></div>
+        <div class="txt">
+        <h4>Staking</h4>
+        <p>Staking validators and tooling</p></div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon"><img src="./head_img/Developers/logo5.svg" alt="wallet logo"></div>
+        <div class="txt">
+        <h4>Wallets</h4>
+        <p>Enable the best wallet experience for any user</p></div>
+      </div>
+
+      <div class="menu-item">
+        <div class="icon"><img src="./head_img/Developers/easyToUse-3.svg" alt="easy logo"></div>
+        <div class="txt">
+        <h4>OnchainKit</h4>
+        <p>Components for building onchain apps</p></div>
+      </div>
+
+
+     
+    </div>
+
+    <div class="menu-right">
+      <!-- Replace this with your actual image -->
+      <img src="./head_img/Developers/developers_upsell.png" alt="Wallet promo"> <!-- Comment: Replace image if needed -->
+      <h4>Build with OnchainKit</h4>
+      <p>Making Building Onchain easy for everyone.</p>
+      <a href="#">Goto OnchainKit &rarr;</a>
+    </div>
+  </div>
+
+</body>
+</html>

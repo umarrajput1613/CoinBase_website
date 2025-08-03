@@ -120,6 +120,173 @@ body {
 .sign-up:hover {
     background-color: #003ecc;
 }
+.iframe-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.iframe-dropdown > a {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.iframe-dropdown > a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* same as nav-links to touch the border */
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #0052ff;
+  transition: width 0.2s ease;
+}
+.iframe-dropdown:hover > a::after {
+  width: 100%;
+}
+/*individual iframe css*/
+.iframe-box {
+  display: none;
+  position: absolute;
+  top: calc(90% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  max-width: 90vw;
+  height: 450px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.iframe-box iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px; /* Optional for iframe content match */
+  border: none;
+}
+
+
+.iframe-dropdown:hover .iframe-box {
+  display: block;
+}
+/*business iframe css*/
+
+.iframe-box1 {
+  display: none;
+  position: absolute;
+  top: calc(90% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px;
+  max-width: 90vw;
+  height: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.iframe-box1 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px; /* Optional for iframe content match */
+  border: none;
+}
+
+
+.iframe-dropdown:hover .iframe-box1 {
+  display: block;
+}
+/*instituion button css*/
+.iframe-box2 {
+  display: none;
+  position: absolute;
+  top: calc(90% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  max-width: 90vw;
+  height: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.iframe-box2 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px; /* Optional for iframe content match */
+  border: none;
+}
+
+
+.iframe-dropdown:hover .iframe-box2 {
+  display: block;
+}
+/*developers css*/
+.iframe-box3 {
+  display: none;
+  position: absolute;
+  top: calc(90% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  max-width: 90vw;
+  height: 340px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.iframe-box3 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px; /* Optional for iframe content match */
+  border: none;
+}
+
+
+.iframe-dropdown:hover .iframe-box3 {
+  display: block;
+}
+/* company css*/
+.iframe-box4 {
+  display: none;
+  position: absolute;
+  top: calc(90% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  max-width: 90vw;
+  height: 340px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.iframe-box4 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px; /* Optional for iframe content match */
+  border: none;
+}
+
+
+.iframe-dropdown:hover .iframe-box4 {
+  display: block;
+}
+
 /* CSS FOR HEADER END */
 section {
   display: flex;
