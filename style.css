@@ -52,7 +52,7 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  padding: 22px 0; /* Yeh adjust karta hai text position */
+  padding: 22px 0; 
   display: flex;
   align-items: center;
   height: 100%;
@@ -61,7 +61,7 @@ body {
 .nav-links a::after {
   content: "";
   position: absolute;
-  bottom: -1px; /* 👈 Yeh magic line: 1px neeche border tak touch karne ke liye */
+  bottom: -1px;
   left: 0;
   height: 3px;
   width: 0%;
@@ -140,7 +140,7 @@ body {
 .iframe-dropdown > a::after {
   content: "";
   position: absolute;
-  bottom: -1px; /* same as nav-links to touch the border */
+  bottom: -1px; 
   left: 0;
   height: 3px;
   width: 0%;
@@ -169,7 +169,7 @@ body {
 .iframe-box iframe {
   width: 100%;
   height: 100%;
-  border-radius: 16px; /* Optional for iframe content match */
+  border-radius: 16px; 
   border: none;
 }
 
@@ -197,7 +197,7 @@ body {
 .iframe-box1 iframe {
   width: 100%;
   height: 100%;
-  border-radius: 16px; /* Optional for iframe content match */
+  border-radius: 16px; 
   border: none;
 }
 
@@ -224,7 +224,7 @@ body {
 .iframe-box2 iframe {
   width: 100%;
   height: 100%;
-  border-radius: 16px; /* Optional for iframe content match */
+  border-radius: 16px; 
   border: none;
 }
 
@@ -251,7 +251,7 @@ body {
 .iframe-box3 iframe {
   width: 100%;
   height: 100%;
-  border-radius: 16px; /* Optional for iframe content match */
+  border-radius: 16px; 
   border: none;
 }
 
@@ -278,7 +278,7 @@ body {
 .iframe-box4 iframe {
   width: 100%;
   height: 100%;
-  border-radius: 16px; /* Optional for iframe content match */
+  border-radius: 16px; 
   border: none;
 }
 
@@ -292,7 +292,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 60px; /* extra spacing after fixed header */
+  padding: 120px 60px; 
   gap: 40px;
   
   background-color: white;
@@ -314,7 +314,7 @@ section {
   line-height: 70px;
   margin-bottom: 20px;
   font-family: "Graphik", sans-serif;
-  font-weight: 100; /* or 700 depending on style */
+  font-weight: 100; 
   
 }
 @font-face {
@@ -349,7 +349,7 @@ section {
 input[type="email"]::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #888; /* Soft gray placeholder color */
+  color: #888; 
 }
 
 .sign-up-btn {
@@ -423,7 +423,7 @@ input[type="email"]::placeholder {
 
 /*
 end cryptos-section*/
-/*  thats section is not need to more styling due tothis we are going to next section *?*/
+/*  thats section is not need to more styling due to this we are going to next section *?*/
 /* section black and half backgruond image*/
 .black {
   background-color: #1E2025;
@@ -463,6 +463,7 @@ font-family: Graphik;
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 20px;
+  font-family: "Graphik", sans-serif;  
   width: 70%;
 }
 .blk-header .set button {
@@ -509,7 +510,7 @@ position: absolute;
   width: 30px;
   height: 30px;
 }
-/*section balck to blue section blue start*/
+/*section black to blue section blue start*/
 .blue{
   background-color: #0052ff;
   color: white;
